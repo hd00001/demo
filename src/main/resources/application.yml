@@ -1,0 +1,18 @@
+spring:
+  application:
+    name: demo
+  datasource:
+    datasource:
+      driver-class-name: com.mysql.cj.jdbc.Driver
+      url: jdbc:mysql://localhost:3306/study
+      username: root
+      password: root
+  mvc:
+    pathmatch:
+      matching-strategy: ant_path_matcher
+server:
+  port: 8080
+  servlet:
+    context-path: /api
+  profiles:
+    active: dev
